@@ -1,0 +1,258 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3c9a6d;
+    color: #fff;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+section h2 {
+    font-size: 2.8em;
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+button {
+    background-color: #2E8B57;
+    color: white;
+    font-size: 1.1em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3c9a6d;
+}
+
+/* List Styles for Loans and Subsidies */
+ul#loanList, ul#subsidyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#loanList li, ul#subsidyList li {
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul#loanList li:hover, ul#subsidyList li:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+ul#loanList li strong, ul#subsidyList li strong {
+    font-size: 1.4em;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+ul#loanList li p, ul#subsidyList li p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+ul#loanList li a, ul#subsidyList li a {
+    color: #2E8B57;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+ul#loanList li a:hover, ul#subsidyList li a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles for Loan Calculator */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2E8B57;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3c9a6d;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    section h2 {
+        font-size: 2.3em;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    ul#loanList li, ul#subsidyList li {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form button {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+}
